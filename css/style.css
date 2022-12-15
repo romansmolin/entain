@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap');
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: url('../img/Background\ 1.png');
+    background-size: cover;
+    background-repeat:no-repeat;
+    padding-bottom: 44px;
+}
+
+.header{
+    min-height: 121px;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    background-color: #FE5722;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.container{
+    max-width: 1100px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 23px;
+    background-color: #fff;
+    padding-top: 22px;
+    
+}
+
+.container .subtitle{
+    height: 44px;
+    margin-bottom: 29px;
+    text-align: center;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 170px 170px 170px 170px 170px 170px ;
+    grid-template-rows: 220px 220px 220px 220px 220px 220px;
+    gap:10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.grid-item-large{
+    grid-row-start: 1;
+    grid-row-end: span 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background: url('../img/Game\ thumbnail.jpg');
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-item-large{
+    border-radius: 15px;
+}
+.grid-item-large .item-header{
+    width: 100%;
+    height: 104px;
+    background-color: #353942;
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;
+}
+
+.grid-item-large .image{
+    width: 282px;
+    height: 282px;
+}
+
+.grid-item-large .item-footer{
+    width: 100%;
+    height: 100px;
+    background-color: #FE5722;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 900;
+    color: #fff;
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius:15px;
+}
+
+.grid-item-smal-expired{
+    background: url('../img/Property\ 1=Variant2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+
+}
+
+.grid-item-smal{
+    background: url('../img/Frame\ 6.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+
+.tab{
+    display: none;
+}
+
+@media only screen and (max-width: 768px){
+    .container{
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container .subtitle{
+        margin-bottom: 70px;
+    }
+
+    .grid-container{
+        grid-template-columns: 170px 170px ;
+        grid-template-rows: repeat(12, 220px);
+    }
+
+   
+    
+}
